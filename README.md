@@ -122,26 +122,6 @@ pnpm cypress:open
 
 ##
 
-## 📚 Project Structure
-
-├── public/
-├── src/
-│ ├── api/ # API wrapper and endpoints
-│ ├── components/ # Reusable UI components
-│ ├── context/ # Context providers (e.g., SearchContext)
-│ ├── features/ # Feature-specific components (e.g., SearchBar)
-│ ├── hooks/ # Custom React hooks
-│ ├── pages/ # Page components (e.g., Home, NotFound)
-│ ├── providers/ # App-level providers (e.g., ReactRouterProvider)
-│ ├── routes/ # Route configuration (e.g., AppRoutes)
-│ ├── types/ # Type definitions and schemas (e.g., Zod schemas)
-│ ├── utils/ # Utility functions and constants
-│ └── App.tsx # Root component
-├── .eslintrc.js # ESLint configuration
-├── tailwind.config.js # TailwindCSS configuration
-├── vite.config.ts # Vite configuration
-└── tsconfig.json # TypeScript configuration
-
 ## ✨ Acknowledgements
 
 • [Spoonacular API](https://spoonacular.com/)
