@@ -1,5 +1,8 @@
 import PageFallback from '@/components/fallback/PageFallback';
+import AuthenticationLayout from '@/components/layouts/AuthenticationLayout';
 import MainLayout from '@/components/layouts/MainLayout';
+import { Login } from '@/features/authentication/pages/Login';
+import { Signup } from '@/features/authentication/pages/Signup';
 import Recipe from '@/features/recipes/pages/Recipe';
 import NotFound from '@/pages/ErrorPage/NotFound';
 import Home from '@/pages/Home';
@@ -27,6 +30,28 @@ const AppRoutes = () => {
               <Recipe />
             </ErrorBoundary>
           ),
+        },
+        {
+          path: '*',
+          element: <NotFound />,
+        },
+      ],
+    },
+    {
+      path: 'authentication',
+      element: <AuthenticationLayout />,
+      children: [
+        {
+          index: true,
+          element: <Login />,
+        },
+        {
+          path: 'signup',
+          element: <Signup />,
+        },
+        {
+          path: '*',
+          element: <NotFound />,
         },
       ],
     },

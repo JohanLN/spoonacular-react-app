@@ -1,5 +1,5 @@
 import Meta from '@/features/recipes/types/entities/meta.entity';
-import useSearch from '@/hooks/useSearch';
+import useSearch from '@/hooks/useSearch.hook';
 import { useMemo } from 'react';
 import {
   Pagination,

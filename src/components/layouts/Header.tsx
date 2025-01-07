@@ -1,5 +1,5 @@
 import SearchBar from '@/components/layouts/SearchBar';
-import useSearch from '@/hooks/useSearch';
+import useSearch from '@/hooks/useSearch.hook';
 import { Search } from 'lucide-react';
 import { Button } from '../ui/button';
 

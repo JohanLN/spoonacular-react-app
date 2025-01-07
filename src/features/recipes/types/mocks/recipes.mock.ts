@@ -1,3 +1,5 @@
+import { SummaryRecipe } from '../shemas/summaryRecipe.schema';
+
 const recipesMock = {
   results: [
     {
@@ -97,7 +99,7 @@ const recipesMock = {
       image: 'https://img.spoonacular.com/recipes/663559-312x231.jpg',
       imageType: 'jpg',
     },
-  ],
+  ] as SummaryRecipe[],
   offset: 16,
   number: 16,
   totalResults: 5230,

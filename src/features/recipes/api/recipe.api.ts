@@ -46,6 +46,12 @@ export const recipeInformations = async (id: number): Promise<Recipe> => {
 
   const response = await axiosClient.get(`recipes/${id}/information`);
 
-  const parsedResponse = recipeSchema.parse(response.data);
-  return parsedResponse;
+  const { success } = recipeSchema.safeParse(response.data);
+
+  if (!success) {
+    throw new Error(
+      `Oooops we are unable to get your recipe informations... Please try again`,
+    );
+  }
+  return response.data;
 };

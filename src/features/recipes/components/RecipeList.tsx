@@ -4,17 +4,17 @@ import { SummaryRecipe } from '../types/shemas/summaryRecipe.schema';
 import RecipeItem from './RecipeItem';
 
 interface RecipeListProps {
-  recipes: SummaryRecipe[];
+  recipesSummary: SummaryRecipe[];
   meta: Meta;
 }
 
-const RecipeList = ({ recipes, meta }: RecipeListProps) => {
+const RecipeList = ({ recipesSummary, meta }: RecipeListProps) => {
   return (
     <div className="flex flex-col gap-3">
       <ul className="grid justify-center gap-3 md:grid-cols-4">
-        {recipes.map((recipe) => (
-          <li key={recipe.id}>
-            <RecipeItem recipe={recipe} />
+        {recipesSummary.map((recipeSummary) => (
+          <li key={recipeSummary.id}>
+            <RecipeItem recipe={recipeSummary} />
           </li>
         ))}
       </ul>

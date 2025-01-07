@@ -19,5 +19,5 @@ export const useRecipes = (
     totalResults: paginatedRecipes?.totalResults || 0,
   } as Meta;
 
-  return { recipes: paginatedRecipes?.results || [], meta, ...rest };
+  return { recipesSummary: paginatedRecipes?.results || [], meta, ...rest };
 };

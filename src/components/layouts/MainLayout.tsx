@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <div className="relative">
       <Header />
-      <main className="h-full w-screen bg-secondary px-4 py-2 md:p-5 md:px-96">
+      <main className="h-full w-screen bg-secondary px-4 py-2 md:p-5 md:px-72 xl:px-96">
         <Outlet />
       </main>
     </div>
